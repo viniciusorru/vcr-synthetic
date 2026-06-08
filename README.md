@@ -15,24 +15,24 @@ The source code will be made available soon.
 
 The released dataset is a two-part curated synthetic dataset for vehicle color recognition:
 
-VCR-Synthetic, generated with RunDiffusion/Juggernaut-XL using text-to-image prompts.
-FGVC-Synthetic, generated with Gemini 2.0 Flash using image-conditioned generation based on vehicle images from UFPR-VeSV.
+VCR-T2I-Synthetic, generated with RunDiffusion/Juggernaut-XL using text-to-image prompts.
+VCR-I2I-Synthetic, generated with Gemini 2.0 Flash using image-conditioned generation based on vehicle images from UFPR-VeSV.
 
 The dataset construction protocol, curation process, and initial experimental results are described in our paper.
 
-## VCR-Synthetic
+## VCR-T2I-Synthetic
 
-VCR-Synthetic contains 12,951 synthetic vehicle images generated through a text-to-image pipeline using RunDiffusion/Juggernaut-XL.
+VCR-T2I-Synthetic contains 12,951 synthetic vehicle images generated through a text-to-image pipeline using RunDiffusion/Juggernaut-XL.
 
 This subset was designed to increase the availability of samples for vehicle color recognition, especially for underrepresented color categories. However, images do not necessarily reproduce the visual of real-world vehicles and scenarios.
 
-## FGVC-Synthetic
+## VCR-I2I-Synthetic
 
-FGVC-Synthetic was generated with an image-to-image strategy using Gemini 2.0 Flash. The generation process was conditioned on images from the [UFPR-VeSV](https://github.com/Lima001/UFPR-VeSV-Dataset) dataset, which was kindly made available by its authors.
+VCR-I2I-Synthetic was generated with an image-to-image strategy using Gemini 2.0 Flash. The generation process was conditioned on images from the [UFPR-VeSV](https://github.com/Lima001/UFPR-VeSV-Dataset) dataset, which was kindly made available by its authors.
 
-Unlike purely text-generated images, FGVC-Synthetic was designed to preserve characteristics of real surveillance scenarios, including vehicle viewpoint, occlusion and visuals.
+Unlike purely text-generated images, VCR-I2I-Synthetic was designed to preserve characteristics of real surveillance scenarios, including vehicle viewpoint, occlusion and visuals.
 
-The UFPR-VeSV dataset contains vehicle images collected under diverse capture conditions, including frontal and rear views, daytime and nighttime acquisition, and infrared imagery. Since FGVC-Synthetic is derived from UFPR-VeSV images, access to this subset follows the same academic and non-commercial restrictions required by the original dataset.
+The UFPR-VeSV dataset contains vehicle images collected under diverse capture conditions, including frontal and rear views, daytime and nighttime acquisition, and infrared imagery. Since VCR-I2I-Synthetic is derived from UFPR-VeSV images, access to this subset follows the same academic and non-commercial restrictions required by the original dataset.
 
 # How to Obtain the Dataset
 
